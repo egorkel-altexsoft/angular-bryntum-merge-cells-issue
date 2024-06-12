@@ -4,3 +4,8 @@ $fa-font-path: '/assets/fonts';
 @import '@bryntum/grid-thin/sass/themes/classic-light';
 @import '@bryntum/scheduler-thin/sass/themes/classic-light';
 @import '@bryntum/schedulerpro-thin/sass/themes/classic-light';
+
+body {
+  height: 100vh;
+  margin: 0;
+}
