@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/.tool-versions
+/src/assets/bryntum-scheduler-pro/
+/src/assets/fonts/

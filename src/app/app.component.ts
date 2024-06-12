@@ -1,17 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  styleUrls: ['./app.component.scss'],
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'angular-bryntum-merge-cells-issue';
-}
+export class AppComponent {}

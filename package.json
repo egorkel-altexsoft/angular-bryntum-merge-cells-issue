@@ -1,22 +1,27 @@
 {
   "name": "angular-bryntum-merge-cells-issue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^18.0.0",
     "@angular/common": "^18.0.0",
     "@angular/compiler": "^18.0.0",
     "@angular/core": "^18.0.0",
-    "@angular/forms": "^18.0.0",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
-    "@angular/router": "^18.0.0",
+    "@bryntum/core-angular-thin": "file:src/assets/bryntum-scheduler-pro/core-angular-thin-5.6.11.tgz",
+    "@bryntum/core-thin": "file:src/assets/bryntum-scheduler-pro/core-thin-5.6.11.tgz",
+    "@bryntum/engine-thin": "file:src/assets/bryntum-scheduler-pro/engine-thin-5.6.11.tgz",
+    "@bryntum/grid-angular-thin": "file:src/assets/bryntum-scheduler-pro/grid-angular-thin-5.6.11.tgz",
+    "@bryntum/grid-thin": "file:src/assets/bryntum-scheduler-pro/grid-thin-5.6.11.tgz",
+    "@bryntum/scheduler-angular-thin": "file:src/assets/bryntum-scheduler-pro/scheduler-angular-thin-5.6.11.tgz",
+    "@bryntum/scheduler-thin": "file:src/assets/bryntum-scheduler-pro/scheduler-thin-5.6.11.tgz",
+    "@bryntum/schedulerpro-angular-thin": "file:src/assets/bryntum-scheduler-pro/schedulerpro-angular-thin-5.6.11.tgz",
+    "@bryntum/schedulerpro-thin": "file:src/assets/bryntum-scheduler-pro/schedulerpro-thin-5.6.11.tgz",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -25,6 +30,8 @@
     "@angular-devkit/build-angular": "^18.0.3",
     "@angular/cli": "^18.0.3",
     "@angular/compiler-cli": "^18.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.3.2",
     "typescript": "~5.4.2"
   }
 }

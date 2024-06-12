@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Bryntum styles
+$fa-font-path: '/assets/fonts';
+@import '@bryntum/core-thin/sass/themes/classic-light';
+@import '@bryntum/grid-thin/sass/themes/classic-light';
+@import '@bryntum/scheduler-thin/sass/themes/classic-light';
+@import '@bryntum/schedulerpro-thin/sass/themes/classic-light';
