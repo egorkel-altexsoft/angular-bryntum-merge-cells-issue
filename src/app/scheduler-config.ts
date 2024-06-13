@@ -5,11 +5,8 @@ import { AppEventModel, AppResourceModel } from './models';
 export const schedulerConfig: Partial<SchedulerProConfig> = {
   startDate: new Date(2024, 5, 1),
   endDate: new Date(2024, 5, 30),
-  allowOverlap: true,
   fillTicks: true,
   rowHeight: 96,
-  resourceMargin: 28,
-  barMargin: 10,
   resourceStore: {
     modelClass: AppResourceModel
   },
