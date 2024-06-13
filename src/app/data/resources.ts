@@ -216,5 +216,85 @@ export const resources: AppResourceModelConfig[] = [
     description: 'Resource 27 description',
     crew: 'Crew 3',
     workgroup: 'Workgroup 2'
+  },
+  {
+    id: '28',
+    image: false,
+    name: 'Resource 28',
+    description: 'Resource 28 description',
+    crew: 'Crew 4',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '29',
+    image: false,
+    name: 'Resource 29',
+    description: 'Resource 29 description',
+    crew: 'Crew 4',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '30',
+    image: false,
+    name: 'Resource 30',
+    description: 'Resource 30 description',
+    crew: 'Crew 4',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '31',
+    image: false,
+    name: 'Resource 31',
+    description: 'Resource 31 description',
+    crew: 'Crew 5',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '32',
+    image: false,
+    name: 'Resource 32',
+    description: 'Resource 32 description',
+    crew: 'Crew 5',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '33',
+    image: false,
+    name: 'Resource 33',
+    description: 'Resource 33 description',
+    crew: 'Crew 5',
+    workgroup: 'Workgroup 2'
+  },
+  {
+    id: '34',
+    image: false,
+    name: 'Resource 34',
+    description: 'Resource 34 description',
+    crew: '',
+    workgroup: 'Workgroup 3'
+  },
+  {
+    id: '35',
+    image: false,
+    name: 'Resource 35',
+    description: 'Resource 35 description',
+    crew: '',
+    workgroup: 'Workgroup 3'
+  },
+  {
+    id: '36',
+    image: false,
+    name: 'Resource 36',
+    description: 'Resource 36 description',
+    crew: 'Crew 1',
+    workgroup: 'Workgroup 3'
+  },
+  {
+    id: '37',
+    image: false,
+    name: 'Resource 37',
+    description: 'Resource 37 description',
+    crew: 'Crew 1',
+    workgroup: 'Workgroup 3'
   }
 ];

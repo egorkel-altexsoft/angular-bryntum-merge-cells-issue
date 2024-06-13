@@ -13,7 +13,6 @@
     "@angular/core": "^18.0.0",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
-    "@bryntum/core-angular-thin": "file:src/assets/bryntum-scheduler-pro/core-angular-thin-5.6.11.tgz",
     "@bryntum/core-thin": "file:src/assets/bryntum-scheduler-pro/core-thin-5.6.11.tgz",
     "@bryntum/engine-thin": "file:src/assets/bryntum-scheduler-pro/engine-thin-5.6.11.tgz",
     "@bryntum/grid-angular-thin": "file:src/assets/bryntum-scheduler-pro/grid-angular-thin-5.6.11.tgz",

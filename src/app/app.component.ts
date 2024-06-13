@@ -4,7 +4,7 @@ import { BryntumSchedulerModule } from '@bryntum/scheduler-angular-thin';
 import { BryntumSchedulerProComponent, BryntumSchedulerProModule } from '@bryntum/schedulerpro-angular-thin';
 import { SchedulerProConfig } from '@bryntum/schedulerpro-thin';
 
-import { resources } from './data';
+import { events, resources } from './data';
 import { schedulerConfig } from './scheduler-config';
 
 @Component({
@@ -22,5 +22,14 @@ export class AppComponent implements AfterViewInit {
 
   public ngAfterViewInit(): void {
     this.scheduler.instance.resourceStore.add(resources);
+    this.#addEvents();
+  }
+
+  protected removeEvents(): void {
+    this.scheduler.instance.eventStore.removeAll();
+  }
+
+  #addEvents(): void {
+    this.scheduler.instance.eventStore.add(events);
   }
 }

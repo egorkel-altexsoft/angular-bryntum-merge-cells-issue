@@ -3,14 +3,10 @@ import { SchedulerProConfig } from '@bryntum/schedulerpro-thin';
 import { AppEventModel, AppResourceModel } from './models';
 
 export const schedulerConfig: Partial<SchedulerProConfig> = {
+  startDate: new Date(2024, 5, 1),
+  endDate: new Date(2024, 5, 30),
   allowOverlap: true,
   fillTicks: true,
-  zoomOnMouseWheel: false,
-  zoomOnTimeAxisDoubleClick: false,
-  useInitialAnimation: false,
-  transitionDuration: 0,
-  createEventOnDblClick: false,
-  enableDeleteKey: false,
   rowHeight: 96,
   resourceMargin: 28,
   barMargin: 10,
@@ -23,7 +19,6 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
   columns: [
     {
       field: 'crew',
-      filterable: false,
       mergeCells: true,
       minWidth: 56,
       renderer: ({ cellElement, record }: { cellElement: HTMLElement; record: AppResourceModel }) => {
@@ -34,49 +29,24 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
         return '';
       },
       resizable: false,
-      text: '',
       width: 56
     },
     {
       field: 'name',
-      filterable: false,
       minWidth: 280,
       resizable: false,
       showEventCount: false,
       showMeta: (resource: AppResourceModel) => resource.description,
-      text: '',
       type: 'resourceInfo'
     }
   ],
   features: {
-    cellEdit: false,
-    eventDrag: {
-      copyKey: '',
-      showTooltip: false
-    },
-    eventDragCreate: false,
-    eventMenu: false,
-    eventResize: {
-      showTooltip: false
-    },
     group: {
-      field: 'workgroup',
-      renderer: ({ groupRowFor, isFirstColumn }) => (isFirstColumn ? groupRowFor : '')
+      field: 'workgroup'
     },
     mergeCells: {
       sortedOnly: false
     },
-    scheduleMenu: false,
-    sort: false,
-    timeRanges: {
-      showCurrentTimeLine: {
-        cls: 'current-time-line'
-      }
-    },
-    eventEdit: false,
-    cellMenu: false,
-    headerMenu: false,
-    timeAxisHeaderMenu: false,
-    scheduleTooltip: false
+    sort: false
   }
 };
