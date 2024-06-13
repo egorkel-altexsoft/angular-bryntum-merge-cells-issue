@@ -9,3 +9,26 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+// Merged cells
+.crew-cell {
+  writing-mode: vertical-rl;
+  display: block;
+  height: 100% !important;
+  line-height: 39px;
+  overflow: hidden !important;
+  text-align: center;
+  padding: 8px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: none !important;
+
+  &:not(:empty) {
+    background-color: #e2e8f0 !important;
+  }
+}
+
+.b-grid-merged-cells-container {
+  z-index: 2;
+}
