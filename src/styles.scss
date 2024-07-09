@@ -18,13 +18,10 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: #475569;
+  background-color: #e2e8f0;
 
   & > * {
     justify-content: center;
-  }
-
-  &:not(:empty) {
-    background-color: #e2e8f0 !important;
   }
 }
 
