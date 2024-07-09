@@ -17,14 +17,10 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
     {
       field: 'crew',
       mergeCells: true,
-      minWidth: 56,
-      renderer: ({ cellElement, record }: { cellElement: HTMLElement; record: AppResourceModel }) => {
-        if (!record.isGroupHeader) {
-          cellElement.classList.add('crew-cell');
-          return record.crew;
-        }
-        return '';
+      mergedRenderer: ({ domConfig, value, record }: any) => {
+        domConfig.className['crew-cell'] = !!value && !record.isGroupHeader;
       },
+      minWidth: 56,
       resizable: false,
       width: 56
     },

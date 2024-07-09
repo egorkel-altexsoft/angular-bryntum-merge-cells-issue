@@ -18,7 +18,7 @@ import { schedulerConfig } from './scheduler-config';
 export class AppComponent implements AfterViewInit {
   @ViewChild(BryntumSchedulerProComponent) protected readonly scheduler!: BryntumSchedulerProComponent;
 
-  protected readonly config = schedulerConfig as SchedulerProConfig;
+  protected readonly config: Required<SchedulerProConfig> = schedulerConfig as Required<SchedulerProConfig>;
 
   public ngAfterViewInit(): void {
     this.scheduler.instance.resourceStore.add(resources);

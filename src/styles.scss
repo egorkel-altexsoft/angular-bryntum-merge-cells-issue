@@ -12,17 +12,16 @@ body {
 
 // Merged cells
 .crew-cell {
-  writing-mode: vertical-rl;
-  display: block;
-  height: 100% !important;
-  line-height: 39px;
-  overflow: hidden !important;
-  text-align: center;
+  align-items: center;
   padding: 8px;
-  color: #475569;
+  writing-mode: vertical-rl;
   font-size: 12px;
   font-weight: 700;
-  border-bottom: none !important;
+  color: #475569;
+
+  & > * {
+    justify-content: center;
+  }
 
   &:not(:empty) {
     background-color: #e2e8f0 !important;
