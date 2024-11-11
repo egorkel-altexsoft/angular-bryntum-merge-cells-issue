@@ -4,6 +4,13 @@
   height: 100%;
 }
 
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .remove-btn {
   position: absolute;
   bottom: 10px;

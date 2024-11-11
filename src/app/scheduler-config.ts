@@ -7,8 +7,10 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
   endDate: new Date(2024, 5, 30),
   fillTicks: true,
   rowHeight: 96,
+  resourceMargin: 28,
   resourceStore: {
-    modelClass: AppResourceModel
+    modelClass: AppResourceModel,
+    sorters: [{ fn: resourceSorter }]
   },
   eventStore: {
     modelClass: AppEventModel
@@ -17,8 +19,8 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
     {
       field: 'crew',
       mergeCells: true,
-      mergedRenderer: ({ domConfig, value, record }: any) => {
-        domConfig.className['crew-cell'] = !!value && !record.isGroupHeader;
+      mergedRenderer: ({ domConfig, value }: any) => {
+        domConfig.className['crew-cell'] = !!value;
       },
       minWidth: 56,
       resizable: false,
@@ -29,17 +31,46 @@ export const schedulerConfig: Partial<SchedulerProConfig> = {
       minWidth: 280,
       resizable: false,
       showEventCount: false,
-      showMeta: (resource: AppResourceModel) => resource.description,
+      showMeta: (resource: AppResourceModel) => resource.description + ', ' + resource.type,
       type: 'resourceInfo'
     }
   ],
   features: {
     group: {
-      field: 'workgroup'
+      field: 'workgroup',
+      groupSortFn: groupSorter
     },
     mergeCells: {
+      passthrough: false,
       sortedOnly: false
     },
     sort: false
   }
 };
+
+/**
+ * These 2 sorters break calendar rows order on initial load
+ */
+function resourceSorter(a: AppResourceModel, b: AppResourceModel): number {
+  // 1) Sort by crew
+  if (a.crew !== b.crew) {
+    return (a.crew || '').localeCompare(b.crew);
+  }
+  // 2) Sort by type
+  if (a.type !== b.type) {
+    return typeComparator(a, b);
+  }
+  // 3) Sort by name
+  return (a.name || '').localeCompare(b.name);
+}
+
+function typeComparator(a: AppResourceModel, b: AppResourceModel): number {
+  return a.type === 'typeA' && b.type === 'typeB' ? -1 : 1;
+}
+
+function groupSorter(a: AppResourceModel, b: AppResourceModel): number {
+  if (!a.isGroupHeader || !b.isGroupHeader) {
+    return 0;
+  }
+  return b.workgroup.localeCompare(a.workgroup);
+}

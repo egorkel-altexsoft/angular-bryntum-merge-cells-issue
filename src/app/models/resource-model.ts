@@ -4,6 +4,7 @@ export interface ResourceModelCustomFields {
   crew: string;
   description: string;
   workgroup: string;
+  type: string;
 }
 
 export type AppResourceModelConfig = Partial<ResourceModelConfig & ResourceModelCustomFields>;
@@ -26,6 +27,10 @@ export class AppResourceModel extends ResourceModel implements ResourceModelCust
       {
         name: 'workgroup',
         type: 'string'
+      },
+      {
+        name: 'type',
+        type: 'string'
       }
     ];
   }
@@ -34,4 +39,5 @@ export class AppResourceModel extends ResourceModel implements ResourceModelCust
   public declare description: string;
   public declare id: string;
   public declare workgroup: string;
+  public declare type: string;
 }

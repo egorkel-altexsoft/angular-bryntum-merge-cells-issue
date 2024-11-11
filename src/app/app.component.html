@@ -1,15 +1,22 @@
-<bryntum-scheduler-pro
-  [startDate]="config.startDate"
-  [endDate]="config.endDate"
-  [fillTicks]="config.fillTicks"
-  [rowHeight]="config.rowHeight"
-  [resourceStore]="config.resourceStore"
-  [eventStore]="config.eventStore"
-  [columns]="config.columns"
-  [groupFeature]="config.features.group!"
-  [mergeCellsFeature]="config.features.mergeCells!"
-  [sortFeature]="config.features.sort!"
-  height="100%">
-</bryntum-scheduler-pro>
+@if (calendarActive()) {
+  <bryntum-scheduler-pro
+    [startDate]="config.startDate"
+    [endDate]="config.endDate"
+    [fillTicks]="config.fillTicks"
+    [rowHeight]="config.rowHeight"
+    [resourceMargin]="config.resourceMargin"
+    [resourceStore]="config.resourceStore"
+    [eventStore]="config.eventStore"
+    [columns]="config.columns"
+    [groupFeature]="config.features.group!"
+    [mergeCellsFeature]="config.features.mergeCells!"
+    [sortFeature]="config.features.sort!"
+    height="100%">
+  </bryntum-scheduler-pro>
+} @else {
+  <p>Calendar is removed, press show calendar</p>
+}
 
-<button type="button" class="remove-btn" (click)="removeEvents()">Remove events</button>
+<button type="button" class="remove-btn" (click)="toggleCalendar()">
+  {{ calendarActive() ? "Remove calendar" : "Show calendar" }}
+</button>
