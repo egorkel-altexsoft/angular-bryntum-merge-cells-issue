@@ -3,7 +3,7 @@
 ## How to run the demo
 
 1. This demo uses thin packages of the Bryntum scheduler pro.
-  Put npm tgz packages to the **src/assets/bryntum-scheduler-pro** folder.
+  Put npm tgz packages to the **src/assets/bryntum-scheduler-pro** folder and run `npm i`.
   The list of required packages see in the package.json file.
   As an alternative you can use [bryntum guide](https://www.bryntum.com/products/scheduler/docs/guide/Scheduler/quick-start/angular#access-to-npm-registry) to install the packages.
 

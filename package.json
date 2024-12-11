@@ -2,7 +2,7 @@
   "name": "angular-bryntum-merge-cells-issue",
   "version": "1.0.0",
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --port=4100",
     "build": "ng build",
     "watch": "ng build --watch --configuration development"
   },
@@ -21,6 +21,7 @@
     "@bryntum/scheduler-thin": "file:src/assets/bryntum-scheduler-pro/scheduler-thin-6.1.1.tgz",
     "@bryntum/schedulerpro-angular-thin": "file:src/assets/bryntum-scheduler-pro/schedulerpro-angular-thin-6.1.1.tgz",
     "@bryntum/schedulerpro-thin": "file:src/assets/bryntum-scheduler-pro/schedulerpro-thin-6.1.1.tgz",
+    "date-fns": "^4.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

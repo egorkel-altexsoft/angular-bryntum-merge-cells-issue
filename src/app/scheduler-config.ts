@@ -2,9 +2,12 @@ import { SchedulerProConfig } from '@bryntum/schedulerpro-thin';
 
 import { AppEventModel, AppResourceModel } from './models';
 
+export const startDate = new Date(2024, 5, 1);
+export const endDate = new Date(2024, 5, 30);
+
 export const schedulerConfig: Partial<SchedulerProConfig> = {
-  startDate: new Date(2024, 5, 1),
-  endDate: new Date(2024, 5, 30),
+  startDate,
+  endDate,
   fillTicks: true,
   rowHeight: 96,
   resourceMargin: 28,
@@ -69,8 +72,5 @@ function typeComparator(a: AppResourceModel, b: AppResourceModel): number {
 }
 
 function groupSorter(a: AppResourceModel, b: AppResourceModel): number {
-  if (!a.isGroupHeader || !b.isGroupHeader) {
-    return 0;
-  }
-  return b.workgroup.localeCompare(a.workgroup);
+  return a.workgroup.localeCompare(b.workgroup);
 }

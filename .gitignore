@@ -41,5 +41,7 @@ testem.log
 .DS_Store
 Thumbs.db
 /.tool-versions
-/src/assets/bryntum-scheduler-pro/
-/src/assets/fonts/
+/src/assets/bryntum-scheduler-pro/*
+!/src/assets/bryntum-scheduler-pro/.gitkeep
+/src/assets/fonts/*
+!/src/assets/fonts/.gitkeep

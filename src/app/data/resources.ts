@@ -7,7 +7,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 1',
     description: 'Resource 1 description',
     crew: '',
-    workgroup: 'Workgroup 1.1',
+    workgroup: 'Workgroup 1',
     type: 'typeA'
   },
   {
@@ -16,7 +16,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 2',
     description: 'Resource 2 description',
     crew: '',
-    workgroup: 'Workgroup 1.1',
+    workgroup: 'Workgroup 1',
     type: 'typeB'
   },
   {
@@ -25,7 +25,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 3',
     description: 'Resource 3 description',
     crew: '',
-    workgroup: 'Workgroup 1.1',
+    workgroup: 'Workgroup 1',
     type: 'typeA'
   },
   {
@@ -34,7 +34,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 4',
     description: 'Resource 4 description',
     crew: '',
-    workgroup: 'Workgroup 1.1',
+    workgroup: 'Workgroup 1',
     type: 'typeB'
   },
   {
@@ -42,8 +42,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 5',
     description: 'Resource 5 description',
-    crew: 'Crew 2',
-    workgroup: 'Workgroup 1.2',
+    crew: '',
+    workgroup: 'Workgroup 2',
     type: 'typeB'
   },
   {
@@ -51,8 +51,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 6',
     description: 'Resource 6 description',
-    crew: 'Crew 2',
-    workgroup: 'Workgroup 1.2',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeB'
   },
   {
@@ -60,8 +60,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 7',
     description: 'Resource 7 description',
-    crew: 'Crew 2',
-    workgroup: 'Workgroup 1.2',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -69,8 +69,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 8',
     description: 'Resource 8 description',
-    crew: 'Crew 3',
-    workgroup: 'Workgroup 1.2',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -78,8 +78,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 9',
     description: 'Resource 9 description',
-    crew: 'Crew 3',
-    workgroup: 'Workgroup 1.3',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -87,8 +87,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 10',
     description: 'Resource 10 description',
-    crew: 'Crew 3',
-    workgroup: 'Workgroup 1.3',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -96,8 +96,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 11',
     description: 'Resource 11 description',
-    crew: 'Crew 4',
-    workgroup: 'Workgroup 1.3',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -105,8 +105,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 12',
     description: 'Resource 12 description',
-    crew: 'Crew 4',
-    workgroup: 'Workgroup 1.3',
+    crew: '',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -115,7 +115,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 13',
     description: 'Resource 13 description',
     crew: '',
-    workgroup: 'Workgroup 1',
+    workgroup: 'Workgroup 3',
     type: 'typeB'
   },
   {
@@ -124,7 +124,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 14',
     description: 'Resource 14 description',
     crew: '',
-    workgroup: 'Workgroup 1',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -133,7 +133,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 15',
     description: 'Resource 15 description',
     crew: '',
-    workgroup: 'Workgroup 1',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -141,8 +141,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 16',
     description: 'Resource 16 description',
-    crew: '',
-    workgroup: 'Workgroup 1',
+    crew: 'Crew 1',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -150,8 +150,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 17',
     description: 'Resource 17 description',
-    crew: '',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 1',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -159,8 +159,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 18',
     description: 'Resource 18 description',
-    crew: '',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 1',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -169,7 +169,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 19',
     description: 'Resource 19 description',
     crew: 'Crew 1',
-    workgroup: 'Workgroup 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -177,8 +177,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 20',
     description: 'Resource 20 description',
-    crew: 'Crew 1',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -186,8 +186,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 21',
     description: 'Resource 21 description',
-    crew: 'Crew 1',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -196,7 +196,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 22',
     description: 'Resource 22 description',
     crew: 'Crew 2',
-    workgroup: 'Workgroup 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -205,7 +205,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 23',
     description: 'Resource 23 description',
     crew: 'Crew 2',
-    workgroup: 'Workgroup 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -214,7 +214,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 24',
     description: 'Resource 24 description',
     crew: 'Crew 2',
-    workgroup: 'Workgroup 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -222,8 +222,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 25',
     description: 'Resource 25 description',
-    crew: 'Crew 3',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -231,8 +231,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 26',
     description: 'Resource 26 description',
-    crew: 'Crew 3',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -241,7 +241,7 @@ export const resources: AppResourceModelConfig[] = [
     name: 'Resource 27',
     description: 'Resource 27 description',
     crew: 'Crew 3',
-    workgroup: 'Workgroup 2',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -249,8 +249,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 28',
     description: 'Resource 28 description',
-    crew: 'Crew 4',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -258,8 +258,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 29',
     description: 'Resource 29 description',
-    crew: 'Crew 4',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -267,8 +267,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 30',
     description: 'Resource 30 description',
-    crew: 'Crew 4',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -276,8 +276,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 31',
     description: 'Resource 31 description',
-    crew: 'Crew 5',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -285,8 +285,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 32',
     description: 'Resource 32 description',
-    crew: 'Crew 5',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -294,8 +294,8 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 33',
     description: 'Resource 33 description',
-    crew: 'Crew 5',
-    workgroup: 'Workgroup 2',
+    crew: 'Crew 3',
+    workgroup: 'Workgroup 3',
     type: 'typeA'
   },
   {
@@ -303,34 +303,7 @@ export const resources: AppResourceModelConfig[] = [
     image: false,
     name: 'Resource 34',
     description: 'Resource 34 description',
-    crew: '',
-    workgroup: 'Workgroup 3',
-    type: 'typeA'
-  },
-  {
-    id: '35',
-    image: false,
-    name: 'Resource 35',
-    description: 'Resource 35 description',
-    crew: '',
-    workgroup: 'Workgroup 3',
-    type: 'typeA'
-  },
-  {
-    id: '36',
-    image: false,
-    name: 'Resource 36',
-    description: 'Resource 36 description',
-    crew: 'Crew 1',
-    workgroup: 'Workgroup 3',
-    type: 'typeA'
-  },
-  {
-    id: '37',
-    image: false,
-    name: 'Resource 37',
-    description: 'Resource 37 description',
-    crew: 'Crew 1',
+    crew: 'Crew 4',
     workgroup: 'Workgroup 3',
     type: 'typeA'
   }
